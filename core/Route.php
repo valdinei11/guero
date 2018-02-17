@@ -42,7 +42,7 @@ class Route {
 
         foreach ($this->routes as $route) {
             $routeArray = explode('/', $route[0]);
-            
+            $param = [];
             for ($i=0; $i < count($routeArray); $i++) {
                 if ((strpos($routeArray[$i], "{") !== false) && (count($urlArray) == count($routeArray))) {
                     $routeArray[$i] = $urlArray[$i];
