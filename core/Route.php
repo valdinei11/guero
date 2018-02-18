@@ -76,7 +76,7 @@ class Route {
                     $controller->$action($this->getRequest());
             }
         } else {
-            echo "Página não encontrada!";
+            Container::pageNotFound();
         }
     }
 }

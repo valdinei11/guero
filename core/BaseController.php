@@ -39,7 +39,7 @@ abstract class BaseController {
         }
     }
 
-    protected function getPageTitle($separ = "|") {
+    protected function getPageTitle($separ = null) {
         echo $this->pageTitle .  " {$separ} ";
     }
 
