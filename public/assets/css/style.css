@@ -9,10 +9,41 @@
 
 body {
     font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 0;
     margin: 0;
 }
 
 h1, h2 {
     font-family: "Open Sans", "Segoe UI", sans-serif;
     font-weight: 300;
+}
+
+/* Boxes */
+.cont > * {
+    display: inline-block;
+}
+
+.item {
+    width: 23%;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #6c689c;
+}
+
+@media (max-width: 992px) {
+    .item {
+        width: 31%;
+    }
+}
+@media (max-width: 768px) {
+    .item {
+        width: 47%;
+    }
+}
+@media (max-width: 520px) {
+    .item {
+        width: 100%;
+    }
 }
