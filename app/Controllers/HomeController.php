@@ -7,7 +7,7 @@ use Core\BaseController;
 class HomeController extends BaseController {
 
     public function index() {
-        $this->view->nome = "Valdinei Ferreira";
+        $this->setPageTitle("Home");
         $this->renderView('home/index', 'layout');
     }
 }
