@@ -1,1 +1,18 @@
-@import "menu.css";
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300|Open+Sans:300,400');
+@import "navbar.css";
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: "Open Sans", "Segoe UI", sans-serif;
+    font-weight: 300;
+}
