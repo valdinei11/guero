@@ -1,0 +1,9 @@
+DROP DATABASE IF EXISTS `guero`;
+
+CREATE DATABASE `guero`;
+
+CREATE TABLE `faq` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `question` VARCHAR(255) NOT NULL UNIQUE,
+    `content` TEXT NOT NULL UNIQUE
+);
