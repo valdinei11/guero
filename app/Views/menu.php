@@ -7,7 +7,7 @@
         <input type="checkbox" id="check">
         <ul id="menu">
             <li><a href="/">Home</a></li>
-            <li><a href="/posts">Posts</a></li>
+            <li><a href="/faq">FAQ</a></li>
             <li><a href="/">About Us</a></li>
         </ul>
     </nav>
