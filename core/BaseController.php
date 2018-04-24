@@ -7,7 +7,7 @@ abstract class BaseController {
     private $viewPath;
     private $layoutPath;
     private $pageTitle;
-    
+
     public function __construct() {
         $this->view = new \stdClass;
     }
@@ -24,16 +24,16 @@ abstract class BaseController {
     }
 
     protected function content() {
-        if (file_exists(__DIR__ . "/../app/Views/{$this->viewPath}.phtml")) {
-            require_once __DIR__ . "/../app/Views/{$this->viewPath}.phtml";
+        if (file_exists(__DIR__ . "/../app/Views/{$this->viewPath}.php")) {
+            require_once __DIR__ . "/../app/Views/{$this->viewPath}.php";
         } else {
             echo "Error: View path not found!";
         }
     }
 
     protected function layout() {
-        if (file_exists(__DIR__ . "/../app/Views/{$this->layoutPath}.phtml")) {
-            require_once __DIR__ . "/../app/Views/{$this->layoutPath}.phtml";
+        if (file_exists(__DIR__ . "/../app/Views/{$this->layoutPath}.php")) {
+            require_once __DIR__ . "/../app/Views/{$this->layoutPath}.php";
         } else {
             echo "Error: Layout path not found!";
         }

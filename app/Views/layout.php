@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="/assets/css/style.css">
     </head>
     <body>
-        <?php require_once __DIR__ . "/menu.phtml";?>
+        <?php require_once __DIR__ . "/menu.php";?>
         <?php $this->content() ?>
     </body>
 </html>
