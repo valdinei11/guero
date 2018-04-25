@@ -16,12 +16,16 @@ body {
 }
 
 section {
-    padding: 30px 5%
+    padding: 30px 5%;
 }
 
 h1, h2 {
     font-family: "Open Sans", "Segoe UI", sans-serif;
     font-weight: 300;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* BEGIN BOXES */
