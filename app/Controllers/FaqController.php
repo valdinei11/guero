@@ -3,10 +3,17 @@
 namespace App\Controllers;
 
 use Core\BaseController;
-use App\Models\Faq;
+use Core\Container;
 
 class FaqController extends BaseController {
+    public function __construct() {
+        parent::__construct();
+        $this->faq = Container::getModel("Faq");
+    }
+
     public function index() {
+        $this->view->faq = $this->faq->all();
+        
         $this->setPageTitle("FAQ - Guero");
         $this->renderView("faq/index", "layout");
     }
