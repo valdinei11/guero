@@ -2,9 +2,13 @@
 
 namespace App\Controllers;
 
-class FaqController {
+use Core\BaseController;
+use App\Models\Faq;
+
+class FaqController extends BaseController {
     public function index() {
-        echo "Posts";
+        $this->setPageTitle("FAQ - Guero");
+        $this->renderView("faq/index", "layout");
     }
 
     public function show($id) {
