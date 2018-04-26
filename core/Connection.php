@@ -6,7 +6,7 @@ use PDOException;
 
 class Connection {
     public static function connect() {
-        $conf = include_once('/../app/database.php');
+        $conf = include_once('../app/database.php');
 
         $host = $conf['mysql']['host'];
         $database = $conf['mysql']['database'];
