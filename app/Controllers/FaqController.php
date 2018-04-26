@@ -13,8 +13,8 @@ class FaqController extends BaseController {
 
     public function index() {
         $this->view->faq = $this->faq->all();
-        
-        $this->setPageTitle("FAQ - Guero");
+
+        $this->setPageTitle("FAQ");
         $this->renderView("faq/index", "layout");
     }
 

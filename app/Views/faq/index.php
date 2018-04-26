@@ -1,5 +1,5 @@
 <section>
-    <?php $this->getPageTitle ?>
+    <h2><?php $this->getPageTitle(); ?></h2>
 </section>
 <section>
     <?php foreach ($this->view->faq as $faq):?>
