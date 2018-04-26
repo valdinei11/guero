@@ -5,7 +5,7 @@ return [
 
     'mysql' => [
         'host' => 'localhost',
-        'database' => '',
+        'database' => 'guero',
         'user' => '',
         'pass' => '',
         'charset' => 'utf8',
