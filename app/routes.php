@@ -1,8 +1,8 @@
 <?php
 
 $route[] = ['/', 'HomeController@index'];
-$route[] = ['/faq', 'PostsController@index'];
-$route[] = ['/faq/{id}/show', 'PostsController@show'];
+$route[] = ['/faq', 'FaqController@index'];
+$route[] = ['/faq/{id}/show', 'FaqController@show'];
 
 
 
