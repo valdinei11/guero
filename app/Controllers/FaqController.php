@@ -19,8 +19,9 @@ class FaqController extends BaseController {
     }
 
     public function show($id) {
-        echo $id . "<br>";
-        echo $request->get->nome . "<br>";
-        echo $request->get->sexo . "<br>";
+        $this->view->faq = $this->faq->find($id);
+
+        $this->setPageTitle("FAQ - {$this->view->faq->question}");
+        $this->renderView("faq/show", "layout");
     }
 }
