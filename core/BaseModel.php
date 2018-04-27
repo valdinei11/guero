@@ -27,6 +27,6 @@ abstract class BaseModel {
         $stmt->execute();
         $result = $stmt->fetch();
         $stmt->closeCursor();
-        return result;
+        return $result;
     }
 }
