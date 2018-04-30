@@ -23,15 +23,33 @@ div {
     padding: 5px 0;
 }
 
-h1, h2 {
-    font-family: "Open Sans", "Segoe UI", sans-serif;
-    font-weight: 300;
-}
 
 a {
     text-decoration: none;
     color: inherit;
 }
+
+/* BEGIN TEXT STYLE */
+h1, h2 {
+    font-family: "Open Sans", "Segoe UI", sans-serif;
+    font-weight: 300;
+}
+h2 {
+    margin: 0.2em 0;
+}
+
+.txt-big {
+    font-size: 1.3em;
+}
+/* END TEXT STYLE */
+
+.box-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* BEGIN UNDERLINE EFFECT */
 .underline > a {
   position: relative;
   text-decoration: none;
@@ -55,7 +73,9 @@ a {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+/* END UNDERLINE EFFECT */
 
+/* BEGIN 404 STYLE*/
 .not-found {
     position: fixed;
     top: 50%;
@@ -69,6 +89,7 @@ a {
 .not-found h1 {
     font-size: 3em;
 }
+/* END 404 STYLE */
 
 /* BEGIN BOXES */
 .flexbox {
