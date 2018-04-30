@@ -1,6 +1,6 @@
-<section>
+<div class="container">
     <h1><?php $this->getPageTitle(); ?></h1>
-</section>
+</div>
 <section class="flexbox">
     <div class="flex-col">
         <h2> Lorem Ipsum </h2>

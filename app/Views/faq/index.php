@@ -1,5 +1,7 @@
-<section>
+<div class="container">
     <h1><?php $this->getPageTitle(); ?></h1>
+</div>
+<section>
     <div>
         <?php foreach ($this->view->faq as $faq):?>
             <div class="float-btn">
