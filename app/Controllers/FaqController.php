@@ -6,14 +6,8 @@ use Core\BaseController;
 use Core\Container;
 
 class FaqController extends BaseController {
-    public function __construct() {
-        parent::__construct();
-        $this->faq = Container::getModel("Faq");
-    }
 
     public function index() {
-        $this->view->faq = $this->faq->all();
-
         $this->setPageTitle("FAQ");
         $this->renderView("faq/index", "layout");
     }
